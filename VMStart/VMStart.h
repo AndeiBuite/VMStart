@@ -14,5 +14,3 @@ FOUNDATION_EXPORT double VMStartVersionNumber;
 FOUNDATION_EXPORT const unsigned char VMStartVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <VMStart/PublicHeader.h>
-
-
