@@ -1,6 +1,6 @@
 # ``VMStart``
 
-<!--@START_MENU_TOKEN@-->Summary<!--@END_MENU_TOKEN@-->
+customized Java Virtual Machine management
 
 ## Overview
 
