@@ -2,30 +2,15 @@
 //  Tests.swift
 //  VMStart
 //
-//  Created by Andei Buite on 2025/01/11.
+//  Created by Andei Buite on 2025/02/12.
 //
 
-import Testing
 import Foundation
+import Testing
 @testable import VMStart
 
-extension Runtime
+@Test func getExtensionNameTest() async throws
 {
-    func executeArchive(atPath archive:URL, withProperties properties:[Property]) throws -> VirtualMachine
-    {
-        let task = Process()
-        let stdoutPipe = Pipe()
-        let stderrPipe = Pipe()
-        let stdinPipe = Pipe()
-        
-        task.executableURL = self.structure.executable
-        task.standardOutput = stdoutPipe
-        task.standardError = stderrPipe
-        task.standardInput = stdinPipe
-        task.arguments = properties
-        
-        try task.run()
-        
-        return VirtualMachine(runtime:self, properties:properties, process:task)
-    }
+    let item = URL(fileURLWithPath: "/Users/andei_buite/Workspaces/VMStart.workspace/Release File Examples.md")
+    print(item.pathExtension)
 }

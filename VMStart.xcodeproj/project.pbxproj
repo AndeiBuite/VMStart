@@ -7,7 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B5C73C92D4F4C3E004EA780 /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = 8B5C73C82D4F4C3E004EA780 /* SwiftSoup */; };
+		8B5C73E42D4FD2ED004EA780 /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = 8B5C73E32D4FD2ED004EA780 /* SwiftSoup */; };
+		8B5C73F12D4FDEDD004EA780 /* VMStart.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BCBF2732D291E70009116F4 /* VMStart.framework */; };
 		8BCBF27E2D291E70009116F4 /* VMStart.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BCBF2732D291E70009116F4 /* VMStart.framework */; };
+		8BD057832D5101D5009E92B8 /* Proc in Frameworks */ = {isa = PBXBuildFile; productRef = 8BD057822D5101D5009E92B8 /* Proc */; };
+		8BD057852D5101D5009E92B8 /* ProcUtils in Frameworks */ = {isa = PBXBuildFile; productRef = 8BD057842D5101D5009E92B8 /* ProcUtils */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -20,9 +25,23 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		8B5C73E72D4FDED3004EA780 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		8B5C73E92D4FDED3004EA780 /* Example */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Example; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BCBF2732D291E70009116F4 /* VMStart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = VMStart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BCBF27D2D291E70009116F4 /* VMStartTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VMStartTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BE79F292D7D550300B017B2 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -36,6 +55,11 @@
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		8B5C73EA2D4FDED3004EA780 /* Example */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Example;
+			sourceTree = "<group>";
+		};
 		8BCBF2752D291E70009116F4 /* VMStart */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
@@ -52,10 +76,19 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		8B5C73E62D4FDED3004EA780 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B5C73F12D4FDEDD004EA780 /* VMStart.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8BCBF2702D291E70009116F4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B5C73E42D4FD2ED004EA780 /* SwiftSoup in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,17 +97,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				8BCBF27E2D291E70009116F4 /* VMStart.framework in Frameworks */,
+				8B5C73C92D4F4C3E004EA780 /* SwiftSoup in Frameworks */,
+				8BD057852D5101D5009E92B8 /* ProcUtils in Frameworks */,
+				8BD057832D5101D5009E92B8 /* Proc in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8B5C73F02D4FDEDD004EA780 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8BCBF2692D291E70009116F4 = {
 			isa = PBXGroup;
 			children = (
+				8BE79F292D7D550300B017B2 /* README.md */,
 				8BCBF2752D291E70009116F4 /* VMStart */,
 				8BCBF2812D291E70009116F4 /* VMStartTests */,
+				8B5C73EA2D4FDED3004EA780 /* Example */,
+				8B5C73F02D4FDEDD004EA780 /* Frameworks */,
 				8BCBF2742D291E70009116F4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -84,6 +130,7 @@
 			children = (
 				8BCBF2732D291E70009116F4 /* VMStart.framework */,
 				8BCBF27D2D291E70009116F4 /* VMStartTests.xctest */,
+				8B5C73E92D4FDED3004EA780 /* Example */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -101,6 +148,28 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		8B5C73E82D4FDED3004EA780 /* Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B5C73ED2D4FDED3004EA780 /* Build configuration list for PBXNativeTarget "Example" */;
+			buildPhases = (
+				8B5C73E52D4FDED3004EA780 /* Sources */,
+				8B5C73E62D4FDED3004EA780 /* Frameworks */,
+				8B5C73E72D4FDED3004EA780 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				8B5C73EA2D4FDED3004EA780 /* Example */,
+			);
+			name = Example;
+			packageProductDependencies = (
+			);
+			productName = Example;
+			productReference = 8B5C73E92D4FDED3004EA780 /* Example */;
+			productType = "com.apple.product-type.tool";
+		};
 		8BCBF2722D291E70009116F4 /* VMStart */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8BCBF2862D291E70009116F4 /* Build configuration list for PBXNativeTarget "VMStart" */;
@@ -119,6 +188,7 @@
 			);
 			name = VMStart;
 			packageProductDependencies = (
+				8B5C73E32D4FD2ED004EA780 /* SwiftSoup */,
 			);
 			productName = VMStart;
 			productReference = 8BCBF2732D291E70009116F4 /* VMStart.framework */;
@@ -142,6 +212,9 @@
 			);
 			name = VMStartTests;
 			packageProductDependencies = (
+				8B5C73C82D4F4C3E004EA780 /* SwiftSoup */,
+				8BD057822D5101D5009E92B8 /* Proc */,
+				8BD057842D5101D5009E92B8 /* ProcUtils */,
 			);
 			productName = VMStartTests;
 			productReference = 8BCBF27D2D291E70009116F4 /* VMStartTests.xctest */;
@@ -157,6 +230,9 @@
 				LastSwiftUpdateCheck = 1620;
 				LastUpgradeCheck = 1620;
 				TargetAttributes = {
+					8B5C73E82D4FDED3004EA780 = {
+						CreatedOnToolsVersion = 16.2;
+					};
 					8BCBF2722D291E70009116F4 = {
 						CreatedOnToolsVersion = 16.2;
 					};
@@ -174,6 +250,10 @@
 			);
 			mainGroup = 8BCBF2692D291E70009116F4;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				8B5C73C72D4F4C3E004EA780 /* XCRemoteSwiftPackageReference "SwiftSoup" */,
+				8BD057812D5101D5009E92B8 /* XCRemoteSwiftPackageReference "libproc-swift" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 8BCBF2742D291E70009116F4 /* Products */;
 			projectDirPath = "";
@@ -181,6 +261,7 @@
 			targets = (
 				8BCBF2722D291E70009116F4 /* VMStart */,
 				8BCBF27C2D291E70009116F4 /* VMStartTests */,
+				8B5C73E82D4FDED3004EA780 /* Example */,
 			);
 		};
 /* End PBXProject section */
@@ -203,6 +284,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		8B5C73E52D4FDED3004EA780 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8BCBF26F2D291E70009116F4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -228,6 +316,28 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		8B5C73EE2D4FDED3004EA780 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6Y3A82B3W6;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		8B5C73EF2D4FDED3004EA780 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6Y3A82B3W6;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		8BCBF2872D291E70009116F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -451,6 +561,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		8B5C73ED2D4FDED3004EA780 /* Build configuration list for PBXNativeTarget "Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B5C73EE2D4FDED3004EA780 /* Debug */,
+				8B5C73EF2D4FDED3004EA780 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		8BCBF26D2D291E70009116F4 /* Build configuration list for PBXProject "VMStart" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -479,6 +598,48 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8B5C73C72D4F4C3E004EA780 /* XCRemoteSwiftPackageReference "SwiftSoup" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scinfu/SwiftSoup";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.7.7;
+			};
+		};
+		8BD057812D5101D5009E92B8 /* XCRemoteSwiftPackageReference "libproc-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/x13a/libproc-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.7;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8B5C73C82D4F4C3E004EA780 /* SwiftSoup */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8B5C73C72D4F4C3E004EA780 /* XCRemoteSwiftPackageReference "SwiftSoup" */;
+			productName = SwiftSoup;
+		};
+		8B5C73E32D4FD2ED004EA780 /* SwiftSoup */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8B5C73C72D4F4C3E004EA780 /* XCRemoteSwiftPackageReference "SwiftSoup" */;
+			productName = SwiftSoup;
+		};
+		8BD057822D5101D5009E92B8 /* Proc */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8BD057812D5101D5009E92B8 /* XCRemoteSwiftPackageReference "libproc-swift" */;
+			productName = Proc;
+		};
+		8BD057842D5101D5009E92B8 /* ProcUtils */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8BD057812D5101D5009E92B8 /* XCRemoteSwiftPackageReference "libproc-swift" */;
+			productName = ProcUtils;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8BCBF26A2D291E70009116F4 /* Project object */;
 }

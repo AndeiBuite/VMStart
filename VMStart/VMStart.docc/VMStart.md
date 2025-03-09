@@ -4,10 +4,11 @@ customized Java Virtual Machine management
 
 ## Overview
 
-<!--@START_MENU_TOKEN@-->Text<!--@END_MENU_TOKEN@-->
+Use VMStart framework to manage resources in higer-level apis for your application
+- access Java Runtime Environment with [RuntimeManager](./RuntimeManager.md)
 
 ## Topics
 
-### <!--@START_MENU_TOKEN@-->Group<!--@END_MENU_TOKEN@-->
+### Group
 
 - <!--@START_MENU_TOKEN@-->``Symbol``<!--@END_MENU_TOKEN@-->
