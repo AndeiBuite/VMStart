@@ -17,7 +17,7 @@ public struct Domain
 
 extension Domain
 {
-    convenience init(withString domain:String)
+    init(_ domain:String)
     {
         self.init(sections: domain.split(separator: ".").map{ String($0) })
     }

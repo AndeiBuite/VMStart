@@ -6,8 +6,10 @@ DevelopProgress
     - [x] verificating
 - [ ] launching
     - [x] create virtual machine
-    - [ ] error handling
+    - [ ] crash reporter
 - [ ] monitoring
     - [ ] fetch vm status
     - [x] GUI
-- [ ] crash reporter
+- [ ] assets manage
+    - [ ] updater
+    - [ ] verificator
