@@ -1,14 +1,25 @@
 # ``VMStart``
 
-customized Java Virtual Machine management
+Customized Virtual Machine Startup & Management Automation
 
 ## Overview
 
-Use VMStart framework to manage resources in higer-level apis for your application
-- access Java Runtime Environment with [RuntimeManager](./RuntimeManager.md)
+VMStart is designed to make Java Virtual Machines(JVMs) managed 
+more likely behave as a common macOS application bundle. what 
+ever startup experiences, resources managements and running status
+monitoring... Make it more specific: clickable item in the dock,
+automate application updating framework and crash reports.  
+
+Some Key Features in VMStart:
+- ...
+- ...
+- ...
+
+Supportings from nother helper frameworks are needed to make VMStart
+works better: VMFileManager...
 
 ## Topics
 
 ### Group
 
-- <!--@START_MENU_TOKEN@-->``Symbol``<!--@END_MENU_TOKEN@-->
+- symbol
