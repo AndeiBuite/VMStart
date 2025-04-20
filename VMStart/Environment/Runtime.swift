@@ -196,7 +196,7 @@ extension Runtime.Metadata: CustomStringConvertible
     }
 }
 
-/// Initializes a `Runtime.Package` using a JDK/JRE bundle URL and validates its structure.
+/// Initializes `Runtime.Package` using a JDK/JRE bundle URL and validates its structure.
 extension Runtime.Package
 {
     init(withBundleURL bundle:URL) throws
@@ -250,7 +250,7 @@ extension Runtime: CustomStringConvertible
     }
 }
 
-/// Initializes a `Runtime` instance using a JDK/JRE bundle URL and analyzes its release information.
+/// Initializes `Runtime` using a JDK/JRE bundle URL and analyzes its release information.
 extension Runtime
 {
     init(withBundleURL bundle:URL) throws

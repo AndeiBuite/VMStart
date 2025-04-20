@@ -68,7 +68,7 @@ extension LocalRuntimeLibrary
         }
         
         // fetch all items in the folder. Further analysis will be done later.
-        var subitems = try FileManager.default
+        let subitems = try FileManager.default
             .contentsOfDirectory(at:folder, includingPropertiesForKeys:nil, options:[])
         
         // filter valid runtime packages (must have .jdk or .jre extensions).

@@ -35,7 +35,7 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		8BCBF2852D291E70009116F4 /* Exceptions for "Sources" folder in "VMStart" target */ = {
+		8BCBF2852D291E70009116F4 /* Exceptions for "VMStart" folder in "VMStart" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			publicHeaders = (
 				VMStart.h,
@@ -45,12 +45,12 @@
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		8BCBF2752D291E70009116F4 /* Sources */ = {
+		8BCBF2752D291E70009116F4 /* VMStart */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				8BCBF2852D291E70009116F4 /* Exceptions for "Sources" folder in "VMStart" target */,
+				8BCBF2852D291E70009116F4 /* Exceptions for "VMStart" folder in "VMStart" target */,
 			);
-			path = Sources;
+			path = VMStart;
 			sourceTree = "<group>";
 		};
 		8BCBF2812D291E70009116F4 /* Tests */ = {
@@ -106,7 +106,7 @@
 		8BCBF2692D291E70009116F4 = {
 			isa = PBXGroup;
 			children = (
-				8BCBF2752D291E70009116F4 /* Sources */,
+				8BCBF2752D291E70009116F4 /* VMStart */,
 				8BCBF2812D291E70009116F4 /* Tests */,
 				8BE79F3F2D7D5B6600B017B2 /* Example */,
 				8B5C73F02D4FDEDD004EA780 /* Frameworks */,
@@ -153,7 +153,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				8BCBF2752D291E70009116F4 /* Sources */,
+				8BCBF2752D291E70009116F4 /* VMStart */,
 			);
 			name = VMStart;
 			packageProductDependencies = (

@@ -28,7 +28,7 @@ public final class OpenJDKRuntimeResource: RuntimeResource
     {
         // Check whether the destination is a valid directory to which files can be copied.
         var isDir:ObjCBool = false
-        var exsits = FileManager.default.fileExists(atPath:destination.path.path(), isDirectory:&isDir)
+        let exsits = FileManager.default.fileExists(atPath:destination.path.path(), isDirectory:&isDir)
         if !exsits || !isDir.boolValue
         {
             throw Errors.badDestination
@@ -91,7 +91,7 @@ public final class OpenJDKRuntimeLibrary: NetworkRuntimeLibrary
         
         let releasesList = try SwiftSoup.parse(websiteContent).select("table.builds tr")
         var lastVersionNumberFound:String? = nil
-        for (index, row) in releasesList.enumerated()
+        for (_, row) in releasesList.enumerated()
         {
             let children = row.children()
             switch children.count
@@ -100,14 +100,14 @@ public final class OpenJDKRuntimeLibrary: NetworkRuntimeLibrary
                 case 3:
                     guard let downloadLinkString = try children.select("td a[href]").first()?.attr("href") else { continue }
                     guard let sha256LinkString = try children.select("span.sha a[href]").first()?.attr("href") else { continue }
-                    var systemType:Runtime.Metadata.SystemType? = switch try children[0].text().lowercased()
+                    let systemType:Runtime.Metadata.SystemType? = switch try children[0].text().lowercased()
                     {
                         case "windows": .windows
                         case "mac":     .darwin
                         case "linux":   .linux
                         default: nil
                     }
-                    var systemArch:Runtime.Metadata.SystemArch = switch try children[1].text().lowercased()
+                    let systemArch:Runtime.Metadata.SystemArch = switch try children[1].text().lowercased()
                     {
                         case "aarch64": .aarch64
                         default:        .x86_64
