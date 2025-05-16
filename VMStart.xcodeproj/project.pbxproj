@@ -30,7 +30,6 @@
 		8BBBE1462DA2485E0055340A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		8BCBF2732D291E70009116F4 /* VMStart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = VMStart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BCBF27D2D291E70009116F4 /* VMStartTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VMStartTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8BE79F292D7D550300B017B2 /* Progress.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Progress.md; sourceTree = "<group>"; };
 		8BE79F3E2D7D5B6600B017B2 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -110,7 +109,6 @@
 				8BCBF2812D291E70009116F4 /* Tests */,
 				8BE79F3F2D7D5B6600B017B2 /* Example */,
 				8B5C73F02D4FDEDD004EA780 /* Frameworks */,
-				8BE79F292D7D550300B017B2 /* Progress.md */,
 				8BBBE1462DA2485E0055340A /* README.md */,
 				8BCBF2742D291E70009116F4 /* Products */,
 			);
