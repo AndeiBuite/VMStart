@@ -4,22 +4,18 @@ Customized Virtual Machine Startup & Management Automation
 
 ## Overview
 
-VMStart is designed to make Java Virtual Machines(JVMs) managed 
-more likely behave as a common macOS application bundle. what 
-ever startup experiences, resources managements and running status
-monitoring... Make it more specific: clickable item in the dock,
-automate application updating framework and crash reports.  
+VMStart makes Java Virtual Machine applications providing a experience more likely as a common 
+macOS application bundle. It will be all for users to launch the app with clicking on the
+icon in the Dock, benefits from packaging everything within a application bundle. Any crashes
+can be collected into reports. And recive updates or patches from internet.
 
-Some Key Features in VMStart:
-- ...
-- ...
-- ...
-
-Supportings from nother helper frameworks are needed to make VMStart
-works better: VMFileManager...
+It is not the reason to build macOS apps with Java, but enhance the usability for some apps
+does not conforms to macOS application bundle standard because of Java.
 
 ## Topics
 
-### Group
+### Essentials
 
-- symbol
+- <doc:EnvironmentManagement>
+- <doc:LaunchingVirtualMachines>
+- <doc:MonitoringVirtualMachines>
