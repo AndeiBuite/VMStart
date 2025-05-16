@@ -1,4 +1,4 @@
-# VMStart: Customized Virtual Machine Startup & Management Automation
+# VMStart
 
 VMStart makes Java Virtual Machine applications providing a experience more likely as a common 
 macOS application bundle. It will be all for users to launch the app with clicking on the
